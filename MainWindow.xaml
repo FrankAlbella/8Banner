@@ -1,0 +1,16 @@
+﻿<Window x:Class="_8Banner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_8Banner"
+        mc:Ignorable="d"
+        Title="8Banner" Height="450" Width="700" Icon="favicon.ico">
+	<Grid>
+		<WrapPanel Height="28" Margin="0" Background="LightGray" VerticalAlignment="Bottom">
+			<Label x:Name="lblStatus" Content="Ready" Width="150"/>
+			<Button x:Name="btnCancel" Content="Cancel" Width="75" Visibility="Hidden" Click="btnCancel_Click"/>
+		</WrapPanel>
+		<Frame x:Name="frame" Margin="0,0,0,28" Loaded="frame_Loaded" NavigationUIVisibility="Hidden"/>
+	</Grid>
+</Window>
